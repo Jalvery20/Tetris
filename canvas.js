@@ -86,6 +86,10 @@ const SetupCanvas=()=>{
     ctx.fillText("X : Rotate",310,418)
     
     document.addEventListener("keydown",HandleKeyPress);
+    document.querySelector("#left").addEventListener("click",HandleKeyPress);
+    document.querySelector("#right").addEventListener("click",HandleKeyPress);
+    document.querySelector("#down").addEventListener("click",HandleKeyPress);
+    document.querySelector("#rotate").addEventListener("click",HandleKeyPress);
     CreateTetrominos();
     CreateTetromino();
 
@@ -124,23 +128,23 @@ const DrawTetromino=()=>{
 }
 const HandleKeyPress=(key)=>{
     if(winOrLose==="Game Over") return;
-    if(key.keyCode===74){
+    if(key.keyCode===74||key.target.id==="left"){
         dir=DIRECTION.LEFT;
         if(!HittingTheWall() && !CheckForHorizontalCollision()){
             DeleteTetromino();
             startX--;
             DrawTetromino()
         }       
-    }else if(key.keyCode===76){
+    }else if(key.keyCode===76||key.target.id==="right"){
         dir=DIRECTION.RIGHT;
         if(!HittingTheWall() && !CheckForHorizontalCollision()){
             DeleteTetromino();
             startX++;
             DrawTetromino()
         }        
-    }else if(key.keyCode===75){
+    }else if(key.keyCode===75||key.target.id==="down"){
         MoveTetrominoDown()
-    }else if(key.keyCode===88){
+    }else if(key.keyCode===88||key.target.id==="rotate"){
         RotateTetromino();
     }
 }
