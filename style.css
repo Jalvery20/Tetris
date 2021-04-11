@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+#my-canvas{
+  background-color: darkblue;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.co-shadow{
+  box-shadow: 2 2 12px black;
+}
+.text-shadow{
+  text-shadow: 3 3 3px solid black;
+}
