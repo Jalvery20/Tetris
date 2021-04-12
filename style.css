@@ -30,12 +30,14 @@ h1{
 div{
     margin-top: 20px;
 }
-
+#my-canvas{
+  margin: auto;
+}
   
 @media(max-width:600px){
   #my-canvas{
     width: 80%;
-    margin-left: 15px;
+    margin-left: 0px;
   }
   h1{
     font-size: 70px;
