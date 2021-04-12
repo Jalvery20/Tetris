@@ -52,7 +52,7 @@ const SetupCanvas=()=>{
     
     ctx.font="30px Times New Roman";
     ctx.fillStyle="violet";
-    ctx.fillText("TETRIS",325,25);
+    ctx.fillText("STATS",325,25);
 
     ctx.fillStyle="white";
     ctx.font="21px Arial";
@@ -86,10 +86,6 @@ const SetupCanvas=()=>{
     ctx.fillText("X : Rotate",310,418)
     
     document.addEventListener("keydown",HandleKeyPress);
-    document.querySelector("#left").addEventListener("click",HandleKeyPress);
-    document.querySelector("#right").addEventListener("click",HandleKeyPress);
-    document.querySelector("#down").addEventListener("click",HandleKeyPress);
-    document.querySelector("#rotate").addEventListener("click",HandleKeyPress);
     CreateTetrominos();
     CreateTetromino();
 
@@ -128,23 +124,23 @@ const DrawTetromino=()=>{
 }
 const HandleKeyPress=(key)=>{
     if(winOrLose==="Game Over") return;
-    if(key.keyCode===74||key.target.id==="left"){
+    if(key.keyCode===74){
         dir=DIRECTION.LEFT;
         if(!HittingTheWall() && !CheckForHorizontalCollision()){
             DeleteTetromino();
             startX--;
             DrawTetromino()
         }       
-    }else if(key.keyCode===76||key.target.id==="right"){
+    }else if(key.keyCode===76){
         dir=DIRECTION.RIGHT;
         if(!HittingTheWall() && !CheckForHorizontalCollision()){
             DeleteTetromino();
             startX++;
             DrawTetromino()
         }        
-    }else if(key.keyCode===75||key.target.id==="down"){
+    }else if(key.keyCode===75){
         MoveTetrominoDown()
-    }else if(key.keyCode===88||key.target.id==="rotate"){
+    }else if(key.keyCode===88){
         RotateTetromino();
     }
 }
