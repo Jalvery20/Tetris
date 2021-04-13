@@ -384,6 +384,10 @@ window.setInterval(()=>{
     }
 },500)
 
-document.getElementById("input").focus()
 document.getElementById("input").click()
+document.getElementById("input").focus()
 
+document.getElementById("input").addEventListener("keydown",(e)=>{
+    alert("unalksunxs")
+    console.log(e.target.value);
+})
