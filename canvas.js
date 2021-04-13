@@ -384,6 +384,6 @@ window.setInterval(()=>{
     }
 },500)
 
-document.getElementById("input",()=>{
-    focus()
-})
+document.getElementById("input").focus()
+document.getElementById("input").click()
+
