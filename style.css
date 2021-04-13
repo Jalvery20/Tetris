@@ -33,9 +33,7 @@ div{
 #my-canvas{
   margin: auto;
 }
-input{
-  opacity: 0;
-}
+
   
 @media(max-width:600px){
   #my-canvas{
