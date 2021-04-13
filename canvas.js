@@ -383,3 +383,7 @@ window.setInterval(()=>{
         MoveTetrominoDown();
     }
 },500)
+
+document.getElementById("input",()=>{
+    focus()
+})
