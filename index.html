@@ -1,17 +1,379 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tetris</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <h1>Tetris</h1>
-    <canvas style="margin-top: 10px;" id="my-canvas"></canvas>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jesus Alvarez - Web Developer - Creating responsive websites from scratch"
+    />
+    <meta
+      name="keywords"
+      content="jesus alvarez, portfolio, web development, developer, front end, frontend developer, odin project, breddit, jalvery20"
+    />
+    <meta name="author" content="Jesus Alvarez" />
+    <link rel="icon" type="image/png" href="favicon-32x32.png?v=0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="icons.css">
+    <title>Jesus Alvarez - Portfolio</title>
+  </head>
 
-    <script src="./canvas.js"></script>
-</body>
+  <body>
+    <div id="root">
+      <a class="hidden" href="#header" id="scrollToTop"
+        ><img src="assets/up-arrow.png" alt="up-arrow.png"
+      /></a>
+      <header id="header">
+        <div class="headerSection" id="nameTitle">
+          <h1 id="fullname">Jesus Alvarez</h1>
+          <h2 id="title">web developer</h2>
+        </div>
+        <div class="headerSection" id="navLinks">
+          <ul>
+            <li id="projectsLink"><a href="#project-partplanner">projects</a></li>
+            <li id="aboutmeLink"><a href="#aboutMe">about</a></li>
+            <li id="contactmeLink"><a href="#contactMe">contact</a></li>
+            <li id="resumeLink"><a href="#resume">resume</a></li>
+            <li id="githubLink">
+              <a
+                href="https://github.com/Jalvery20"
+                target="_blank"
+                rel="noreferrer noopener"
+                >github</a
+              >
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <section class="projectSection" id="project-partplanner">
+        <a
+          class="prevContainer"
+          href="https://my-real-time-chat-jal.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+          id="chatImg"
+            class="projectPreview"
+            src="assets/chat.png"
+            alt="chat.png"
+        /></a>
+        <ul class="createdWith">
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>Socket.io</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>EJS</li>
+          <li>CSS</li>
+          <li>Flexbox</li>
+          <li>CSS Grid</li>
+          <li>npm</li>
+          <li>Websocket</li>
+          <li>Bootstrap 4</li>
+        </ul>
+        <div class="description">
+          <p>
+            Created using <b class="node">Node.js</b>, <b>Express</b>,<b>Socket.io</b> and
+            <b class="mongo">MongoDB</b>. This is a Real Time Chat App who allows users to chat each other at diferent devices. The user has to login or create a account to use the app, that let me store every conversation in a database so the users can see it anytime.
+
+          </p>
+          <p>
+            Since this was my first time using Socket.io I learned a lot. There was quite
+            a bit of repetition, which helped solidify my knowledge of socket.io(Websocket) tech. Making the whole Chat functionally was very challenging indeed.
+          </p>
+        </div>
+        <div class="projectLinks">
+          <a
+            href="https://github.com/Jalvery20/ChatApp"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="sourceCode"
+            >SOURCE CODE</a
+          >
+          <a
+            href="https://my-real-time-chat-jal.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="liveDemo"
+            >VIEW SITE</a
+          >
+        </div>
+      </section>
+
+      <section class="projectSection" id="project-reddit">
+        <a
+          class="prevContainer"
+          href="https://react-battleship-jal.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+          id="battleimg"
+            class="projectPreview"
+            src="assets/BattleShip.png"
+            alt="battleship.png"
+        /></a>
+        <ul class="createdWith">
+          <li>React.js</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flexbox</li>
+          <li>CSS Grid</li>
+          <li>webpack</li>
+          <li>npm</li>
+          <li>Bootstrap 5</li>
+        </ul>
+        <div class="description">
+          <p>
+            This is the traditional BattleShip game created using <b class="react">React.js</b>. It takes advantages of React Hooks to create pure functions as well as other performances enhancers.  Users can place their ships either manually or at random locations and battle against the computer AI. The game also shows a real time statistics of the battle.
+          </p>
+          <p> 
+            Making the AI to simulated a normal middle-intelligent shooting behavior was certainly the more complicated part. 
+          </p>
+        </div>
+        <div class="projectLinks">
+          <a
+            href="https://github.com/Jalvery20/BattleShip"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="sourceCode"
+            >SOURCE CODE</a
+          >
+          <a
+            href="https://react-battleship-jal.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="liveDemo"
+            >VIEW SITE</a
+          >
+        </div>
+      </section>
+      <section class="projectSection" id="project-weather">
+        <a
+          class="prevContainer"
+          href="https://jalvery20.github.io/Weather-App/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            class="projectPreview"
+            src="assets/weather.png"
+            alt="weather.png"
+        /></a>
+        <ul class="createdWith">
+          <li>APIs</li>
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flexbox</li>
+          <li>CSS Grid</li>
+          <li>npm</li>
+          <li>Responsive</li>
+        </ul>
+        <div class="description">
+          <p>
+            WeatherApp allows users to enter a city name and receive current
+            weather data using the
+            <b class="openWeather">
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://openweathermap.org/api"
+                >OpenWeatherMap</a
+              ></b
+            >
+            API. Optionally, a user may provide their location using the
+            <b class="geolocation">
+              <a
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+              >
+                Geolocation</a
+              >
+            </b>
+            API by clicking on the location icon next to the input field. All
+            cities with the specified name are displayed, and a temperature unit
+            toggle is available to switch between Celsius and Fahrenheit. City
+            cards are formatted with the help of CSS Grid.
+          </p>
+          <p>
+            One part of this project that had me Googling quite a bit was the Unix time returned by the API for sunrise/sunset times.
+            I wasn't familiar with it before doing this project, and trying to figure out how to convert it to regular time,
+            but also to the correct timezone of the city being displayed, was a tricky task.
+
+          </p>
+        </div>
+        <div class="projectLinks">
+          <a
+            href="https://github.com/Jalvery20/Weather-App"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="sourceCode"
+            >SOURCE CODE</a
+          >
+          <a
+            href="https://jalvery20.github.io/Weather-App/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="liveDemo"
+            >VIEW SITE</a
+          >
+        </div>
+      </section>
+      <section class="projectSection" id="project-todolist">
+        <a
+          class="prevContainer"
+          href="https://shoppingcartheroes.herokuapp.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img class="projectPreview" id="cart" src="assets/cart.jpg" alt="cart.png"
+        /></a>
+        <ul class="createdWith">
+          <li>React</li>  
+          <li>React-router</li>
+          <li>React-spring</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flexbox</li>
+          <li>Responsive</li>
+        </ul>
+        <div class="description">
+          <p>
+            The Hero-Shop is a false  shopping cart website that allows users to buy heroes cards and navigate between pages with the use of React-router. This app is fully responsive.
+        </p>
+        </div>
+        <div class="projectLinks">
+          <a
+            href="https://github.com/Jalvery20/Hero-shop"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="sourceCode"
+            >SOURCE CODE</a
+          >
+          <a
+            href="https://shoppingcartheroes.herokuapp.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="liveDemo"
+            >VIEW SITE</a
+          >
+        </div>
+      </section>
+      <section class="projectSection" id="project-teatime">
+        <a
+          class="prevContainer"
+          href="https://jalvery20.github.io/Tetris/
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <img
+            id="tetris"
+            class="projectPreview"
+            src="assets/tetris.jpg"
+            alt="teatime.png"
+        /></a>
+        <ul class="createdWith">
+          <li>Canvas API</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>Responsive</li>
+        </ul>
+        <div class="description">
+          Based on the classic Tetris game it was one of my first apps made with javascript and my first time using Canvas. Making this project helps me to really understand all 
+          the Canvas API without the use of any library. 
+
+         <p> Since I start learning javascript I was wondering how difficult it will be make this exact game from scratch, then after a extense reading of the Canvas documentation 
+          I was able to make .</p>
+        </div>
+        <div class="projectLinks">
+          <a
+            href="https://github.com/Jalvery20/Tetris"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="sourceCode"
+            >SOURCE CODE</a
+          >
+          <a
+            href="https://jalvery20.github.io/Tetris/"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="liveDemo"
+            >VIEW SITE</a
+          >
+        </div>
+      </section>
+
+      <section id="aboutMe">
+        <div id="aboutContainer">
+          <h2>About me</h2>
+          <p>
+            Hello there, my name is Jesus Alvarez.
+          </p>
+          <p>
+            Designing and creating responsive websites is some of the most
+            fulfilling work I do, and I always look forward to starting a new
+            project. Im a passionate developer but more important Im passionate about technology.
+            I am always ready to learn something new cause the tech industry is always moving forward.
+          </p>
+        </div>
+      </section>
+
+      <section id="contactMe">
+        <h2>Get in touch</h2>
+        <a
+          style="height: 60px;"
+          id="linkedin"
+          target="_blank"
+          rel="noreferrer noopener"
+          href="tel:+53 55414804"
+        >
+              <p style="margin-left: 10p;">+53 55414804</p><i style="position:relative;left:40px;top:-5px;font-size: 35px;" class="bi bi-telephone-fill"></i>
+        </a>
+        <div id="emailContainer">
+          <a
+            id="emailLink"
+            href="LioAlvarezJesus@gmail.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <input id="email" value="LioAlvarezJesus@gmail.com" readonly />
+            <img src="assets/email.png" alt="email.png" />
+          </a>
+          <button id="copyBtn">COPY</button>
+        </div>
+        <div class="hidden" id="copySuccess">Email copied to clipboard</div>
+      </section>
+      <div id="resume">
+        <h2>Resume</h2>
+        <div id="resumeLinks">
+          <a href="https://drive.google.com/file/d/17aJEveKqLtyXPbGMf1DvEpvIbBs5ewlh/view?usp=sharing" target="_blank" rel="noreferrer noopener">
+            View Online
+            <img src="assets/external-link.png" alt="externalLink">
+          </a>
+          <a href="downloads/Jesus Alvarez - Full Stack Resume.pdf" download>
+          Download PDF <img src="assets/download.png" alt="download" >
+          </a>
+        </div>
+      </div>
+
+      
+    <footer>
+      <a
+        href="https://github.com/Jalvery20/"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Jesus Alvarez <img src="assets/github.png" alt="github"
+      /></a>
+    </footer>
+
+    <script src="smoothscroll.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
 </html>
